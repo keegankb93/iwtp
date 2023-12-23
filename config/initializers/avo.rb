@@ -2,7 +2,12 @@
 # The values disaplayed here are the default ones. Uncomment and change them to fit your needs.
 Avo.configure do |config|
   ## == Routing ==
-  config.root_path = '/avo'
+  config.root_path = '/admin'
+  config.current_user_method = :current_admin
+  config.current_user_resource_name = :current_admin
+  config.sign_out_path_name = :destroy_admin_session_path
+
+
   # used only when you have custom `map` configuration in your config.ru
   # config.prefix_path = "/internal"
 
